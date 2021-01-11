@@ -1,0 +1,23 @@
+{
+  "name": "node.js_readme_generator_09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oliviapark113/node.js_readme_generator_09.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oliviapark113/node.js_readme_generator_09/issues"
+  },
+  "homepage": "https://github.com/Oliviapark113/node.js_readme_generator_09#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
