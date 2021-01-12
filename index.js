@@ -97,16 +97,19 @@ function generateMarkdown(data)
   # Table of Contents 
 
 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributing](#contributing)
-    - [Test](#test)
-    - [Credits](#credits)
-    - [License](#license)
-    - [Questions](#description)
+   - [Description](#description)
+   - [Installation](#installation)
+   - [Usage](#usage)
+   - [Contributing](#contributing)
+   - [Test](#test)
+   - [Credits](#credits)
+   - [License](#license)
+   - [Questions](#description)
   
   ##  Description:
+
+  ![License](https://img.shields.io/badge/License-${data.license}-blue)
+
 
    ${data.description}
 
@@ -139,7 +142,9 @@ function generateMarkdown(data)
 
    For questions about the Generator you can go to my GitHub Page at the following Link:
 
-  - [GitHub Profile](https://github.com/${data.git}/${data.title})
+  - [GitHub Profile](https://github.com/${data.git})
+
+  - [View Code](https://github.com/${data.git}/${data.title})
 
    For additional questions please reach out to my email at: ${data.email}
     `
