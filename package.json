@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Oliviapark113/node.js_readme_generator_09#readme",
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "slugify": "^1.4.6"
   }
 }

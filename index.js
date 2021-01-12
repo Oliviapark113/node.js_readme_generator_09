@@ -1,6 +1,8 @@
 
 const fs = require('fs')
 const inquirer = require('inquirer');
+// const temp = require('template')
+const slugify = require('slugify')
 // const slugify = require('slugify')
 
 //inquirer to generate questions 
@@ -16,7 +18,16 @@ inquirer
         },
 
         {  type: "input",
-        message:"How would you like to install your app?",
+        message:"Please enter description of Project",
+        name: "description",
+        //validate property to check that the user provided a value
+        validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
+
+        },
+
+
+        {  type: "input",
+        message:"What are the installation instructions for this project. write NONE if no instructions",
         name: "installation",
         //validate property to check that the user provided a value
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
@@ -32,18 +43,37 @@ inquirer
         },
 
         {  type: "input",
-        message:"How do you use your app",
+        message:"How would you like your application to be used",
         name: "usage",
-        //validate property to check that the user provided a value
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
 
         },
-       //list of liscense used 
-        {  type: "list",
-        message:"What license did you use?",
+
+        {  type: "input",
+        message:"Who contributed on this project?",
+        name: "contribution",
+        validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
+
+        },
+
+        {  type: "input",
+        message:"What are the Test Instructions?",
+        name: "test",
+        validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
+
+        },
+       //liscense used 
+        {  type: "checkbox",
+        message:"Please select a license.",
         name: "license",
-        choices: ['The MIT license','The GPL liense','Apache license','The GNU liscense','N/A'],
-        //validate property to check that the user provided a value
+        choices: ['MIT','ISC','Apache','GNU GPLv3','N/A'],
+        validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
+
+        },
+
+        {  type: "input",
+        message:"Who is credit is this work?",
+        name: "credit",
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
 
         },
@@ -51,7 +81,6 @@ inquirer
         {  type: "input",
         message:"Please enter Github Username",
         name: "git",
-        //validate property to check that the user provided a value
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
 
         },
@@ -59,68 +88,74 @@ inquirer
         {  type: "input",
         message:"Please enter your E-mail",
         name: "email",
-        //validate property to check that the user provided a value
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
-
-        //fuctions to create reademe using fs
         
         },
 
 
   ])
-  .then(({   
-      title,
-      installation,
-      instructions,
-      credit,
-      license,
-      git,
-      linkedin,
-      email,
-      usage,
-      contribution
-    })=>{
+  .then((
+    data)=>{
     // Use user feedback for... whatever!!
+    console.log(data)
+    const template =
+  `
+  # ${data.title}
 
-    const template =`# ${title}
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contribution](#contribution)
-    * [License](#license)
-    # Installation
-    ${installation}
-    ### Usage
-    ${usage}
-    ### Contribution
-    ${contribution}
-    ### Instruciton
-    ${instructions}
-    ### Credits
-    ${credit}
+  # Table of Contents 
 
-    ### Liscense
-    ${license}
 
-    # Contact
-    * Github : ${git}
-    * Linkedin : ${linkedin}
-    *  Email :${email} 
+    -  [Description](#description)
+    -  [Installation](#installation)
+    -  [Usage](#usage)
+    -  [Contributing](#contributing)
+    -  [Test](#test)
+    -  [Credits](#credits)
+    -  [License](#license)
+    -  [Questions](#description)
+  
+  ##  Description:
     
-    
+  ![GitHub](https://img.shields.io/github/license/Oliviapark113/node.js_readme_generator_09?logo=${data.license}&?color=blue&?style=flat-square&logo=appveyor    "License Badge")
+
+     ${data.description}
+
+  ## Installation:
+     ${data.installation}
+
+  ## Usage:
+     ${data.usage}
+
+  ## Contributing:
+     ${data.contribution}
+
+  ## Test:
+     ${data.test}
+
+  ## Credits:
+     ${data.credit}
+
+  ## License:
+     For more information about the Liscense, click on the link below .
+  - [License](https://opensource.org/licenses/${data.license})
+
+  ## Questions:
+     For questions about the Generator you can go to my GitHub Page at the following Link:
+
+  - [GitHub Profile](https://github.com/${data.git}/${data.title})
+
+    For additional questions please reach out to my email at: ${data.email}
     `
     //fuction to create readme using fs
     createRMFile(title, template);
   });
-//   .catch(error => {
-//     if(error.isTtyError) {
-//       // Prompt couldn't be rendered in the current environment
-//     } else {
-//       // Something else when wrong
-//     }
-//   });
+
 
   function createRMFile(fileName, data){
-      fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`, data, (err)=>{
+      fs.writeFile(`./${slugify(fileName, {
+        replacement: '-',
+        lower: false
+      })}.md`, data, (err)=>{
           if(err){
               console.log(err)
           }
