@@ -18,11 +18,11 @@
   ![License](https://img.shields.io/badge/License-MIT-blue)
 
 
-   This application uses Node.js, fs, util and inquirer to create prompts for the user to fill out and then construct readMe markdown document and have the prompts fill in the document.
+   This application uses Node.js, fs, util and inquirer to create prompts for the user to fill out and then build readMe markdown document and have the prompts fill in the document.
 
   ## Installation:
 
-   You need to make sure you have Node.js, util , fs and inquirer installed before you run this application.
+   You need to install Node.js, util , fs and inquirer through your terminal before you run this application.
 
   ## Usage:
 
@@ -30,7 +30,7 @@
 
   ## Contributing:
 
-   Triology and NU Bootcamp provide the starter material.
+   Triology and North Western Bootcamp provide the starter material.
 
   ## Test:
 
@@ -38,7 +38,7 @@
 
   ## Credits:
 
-   This is my work besides the starter material and tutor's advise
+   This is my work besides the starter material and Instructor's advise
 
   ## License:
 
