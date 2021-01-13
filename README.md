@@ -28,7 +28,7 @@
 
   ## Usage:
 
-   This application allows for a user to quickly create a ReadMe File.
+   fdkskj;k
 
   ## Contributing:
 
