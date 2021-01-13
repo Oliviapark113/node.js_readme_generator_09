@@ -5,21 +5,26 @@
 
 
    - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [Test](#test)
-  - [Credits](#credits)
-  - [License](#license)
-  - [Questions](#description)
+   - [Installation](#installation)
+   - [Usage](#usage)
+   - [Contributing](#contributing)
+   - [Test](#test)
+   - [Credits](#credits)
+   - [License](#license)
+   - [Questions](#description)
   
   ##  Description:
 
-   This application uses Node.js, fs, util and inquirer to create prompts for the user to fill out and then construct readMe markdown document and have the prompts fill in the document.
+  ![License](https://img.shields.io/badge/License-MIT-blue)
+
+
+   This application uses Node.js, fs, util and inquirer to create prompts for the user to fill out and then build readMe markdown document and have the prompts fill in the document.
 
   ## Installation:
 
-   You need to make sure you have Node.js, util , fs and inquirer installed before you run this application. 
+  You need to install Node.js, util , fs and inquirer through your terminal before you run this application.
+
+
 
   ## Usage:
 
@@ -27,23 +32,32 @@
 
   ## Contributing:
 
-   Triology and NU Bootcamp provide the starter material.
+   Triology and North Western Bootcamp provide the starter material.
 
   ## Test:
-   none
+
+   None
 
   ## Credits:
 
-   This is my work besides the starter material and tutor's advise
+   This is my work besides the starter material and Instructor's advise
 
   ## License:
+
    For more information about the Liscense, click on the link below .
   - [License](https://opensource.org/licenses/MIT)
 
   ## Questions:
+
    For questions about the Generator you can go to my GitHub Page at the following Link:
 
-  - [GitHub Profile](https://github.com/Oliviapark113/node.js_readme_generator_09)
+  - [GitHub Profile](https://github.com/Oliviapark113)
+
+  - [View Code](https://github.com/Oliviapark113/node.js_readme_generator_09)
 
    For additional questions please reach out to my email at: oliviaypark113@gmail.com
-    
+
+  ## Demo Project:
+
+  - [Demo Video](https://oliviapark113.github.io/Readme.md_demo_video/.)
+
