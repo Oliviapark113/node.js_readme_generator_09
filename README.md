@@ -18,27 +18,29 @@
   ![License](https://img.shields.io/badge/License-MIT-blue)
 
 
-   This application uses Node.js, fs, util and inquirer to create prompts for the user to fill out and then build readMe markdown document and have the prompts fill in the document.
+   this df[a
 
   ## Installation:
 
-   You need to install Node.js, util , fs and inquirer through your terminal before you run this application.
+   gjtlkw;';sgf
+
+
 
   ## Usage:
 
-   This application allows for a user to quickly create a ReadMe File.
+   fdkskj;k
 
   ## Contributing:
 
-   Triology and North Western Bootcamp provide the starter material.
+   tlrakj;lk;l
 
   ## Test:
 
-   None
+   none
 
   ## Credits:
 
-   This is my work besides the starter material and Instructor's advise
+   thjelqk;wlk
 
   ## License:
 
@@ -54,4 +56,8 @@
   - [View Code](https://github.com/Oliviapark113/node.js_readme_generator_09)
 
    For additional questions please reach out to my email at: oliviaypark113@gmail.com
+
+  ## Demo Project.
+
+   <video controls src="test.mov"></video>
     

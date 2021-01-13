@@ -118,6 +118,8 @@ function generateMarkdown(data)
 
    ${data.installation}
 
+
+
   ## Usage:
 
    ${data.usage}
@@ -148,6 +150,10 @@ function generateMarkdown(data)
   - [View Code](https://github.com/${data.git}/${data.title})
 
    For additional questions please reach out to my email at: ${data.email}
+
+  ## Demo Project.
+
+   <video controls src="test.mov"></video>
     `
 }
 
