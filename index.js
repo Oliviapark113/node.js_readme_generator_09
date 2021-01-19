@@ -153,7 +153,7 @@ function generateMarkdown(data)
 
   ## Demo Project.
 
-    ![Demo in gif](demo.gif)
+    ![Demo in gif](demo1.gif)
   - [Demo Video Link](https://oliviapark113.github.io/Readme.md_demo_video/.)
     `
 }
