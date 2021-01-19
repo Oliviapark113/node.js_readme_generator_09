@@ -49,7 +49,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
         },
 
         {  type: "input",
-        message:"What are the Test Instructions?",
+        message:"What are the test Instructions to run test?",
         name: "test",
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
 
@@ -153,7 +153,8 @@ function generateMarkdown(data)
 
   ## Demo Project.
 
-  - [Demo Video](https://oliviapark113.github.io/Readme.md_demo_video/.)
+    ![Demo in gif](demo.gif)
+  - [Demo Video Link](https://oliviapark113.github.io/Readme.md_demo_video/.)
     `
 }
 

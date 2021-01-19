@@ -22,7 +22,7 @@
 
   ## Installation:
 
-  You need to install Node.js, util , fs and inquirer through your terminal before you run this application.
+   You need to install Node.js, util , fs and inquirer through your terminal before you run this application.
 
 
 
@@ -57,7 +57,8 @@
 
    For additional questions please reach out to my email at: oliviaypark113@gmail.com
 
-  ## Demo Project:
+  ## Demo Project.
 
-  - [Demo Video](https://oliviapark113.github.io/Readme.md_demo_video/.)
-
+   ![Demo in gif](demo.gif)
+  - [Demo Video Link](https://oliviapark113.github.io/Readme.md_demo_video/.)
+    
